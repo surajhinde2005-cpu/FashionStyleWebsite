@@ -1,0 +1,127 @@
+.sidebar-filter-vertical {
+  width: 250px;
+  background: #fff;
+  border-right: 1px solid #eaeaec;
+  padding: 10px 0;
+  font-family: 'Assistant', -apple-system, sans-serif;
+  flex-shrink: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eaeaec;
+}
+
+.filter-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #282c3f;
+  margin: 0;
+}
+
+.clear-all {
+  font-size: 12px;
+  color: #ff3f6c;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.filter-section {
+  padding: 20px;
+  border-bottom: 1px solid #eaeaec;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #282c3f;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #282c3f;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  border: 1px solid #c3c4c6;
+  border-radius: 2px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-label:hover input ~ .checkmark {
+  border-color: #282c3f;
+}
+
+.checkbox-label input:checked ~ .checkmark {
+  background-color: #ff3f6c;
+  border-color: #ff3f6c;
+}
+
+.checkbox-label input:checked ~ .checkmark:after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-bottom: 2px;
+}
+
+.color-group {
+  gap: 10px;
+}
+
+.color-indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid #eaeaec;
+}
+
+.price-slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price-label {
+  font-size: 14px;
+  color: #282c3f;
+}
+
+.myntra-range-slider {
+  width: 100%;
+  accent-color: #ff3f6c;
+}
